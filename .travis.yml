@@ -17,4 +17,6 @@ install:
   - unzip chromedriver_linux64.zip -d driver
 
 script:
+  - export PYTHONPATH=$PYTHONPATH:$(pwd)
   - pwd
+  - python 1.py
